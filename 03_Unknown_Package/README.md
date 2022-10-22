@@ -15,7 +15,7 @@
 
 ## Nápovědy
 
-1) > Machines prefer some sort of codes instead of plain texts.
+> Machines prefer some sort of codes instead of plain texts.
 
 ## Řešení
 

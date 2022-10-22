@@ -15,7 +15,7 @@
 
 ## Nápovědy
 
-1) > Messengers use special mobile devices.
+> Messengers use special mobile devices.
 
 ## Řešení
 

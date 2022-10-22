@@ -11,8 +11,9 @@
 
 ## Nápovědy
 
-1) > Do not run more different VPNs at once.
-2) > https://openvpn.net/community-resources/reference-manual-for-openvpn-2-4/
+> Do not run more different VPNs at once.
+
+> https://openvpn.net/community-resources/reference-manual-for-openvpn-2-4/
 
 ## Řešení
 

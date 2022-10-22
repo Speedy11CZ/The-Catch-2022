@@ -15,7 +15,7 @@
 
 ## Nápovědy
 
-1) > Fraudsters never have time for anything, they usually slack off even validating inputs.
+> Fraudsters never have time for anything, they usually slack off even validating inputs.
 
 ## Řešení
 

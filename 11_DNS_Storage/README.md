@@ -13,7 +13,7 @@
 
 ## Nápovědy
 
-1) > The zone is secured by DNSSEC.
+> The zone is secured by DNSSEC.
 
 ## Řešení
 

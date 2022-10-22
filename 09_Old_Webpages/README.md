@@ -13,7 +13,7 @@
 
 ## Nápovědy
 
-1) > The previous system was really old, one can say even ancient or archive.
+> The previous system was really old, one can say even ancient or archive.
 
 ## Řešení
 

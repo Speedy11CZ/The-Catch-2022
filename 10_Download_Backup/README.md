@@ -15,7 +15,7 @@
 
 ## Nápovědy
 
-1) > Brenda's favorite browser was `MS Edge`, i.e. she used `MS Windows` (running the filesystem `NTFS`).
+> Brenda's favorite browser was `MS Edge`, i.e. she used `MS Windows` (running the filesystem `NTFS`).
 
 ## Řešení
 

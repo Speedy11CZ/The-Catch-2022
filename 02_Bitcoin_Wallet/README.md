@@ -13,7 +13,7 @@
 
 ## Nápovědy
 
-1) > The question is: What is a blockchain?
+> The question is: What is a blockchain?
 
 ## Řešení
 
