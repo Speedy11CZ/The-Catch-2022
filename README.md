@@ -14,12 +14,12 @@ Soutěžící má za úkol najít pro každou úlohu v co nejkratší dobu speci
 1\. [VPN Access](01_VPN_Access) (1)<br>
 2\. [Bitcoin Wallet](02_Bitcoin_Wallet) (1)<br>
 3\. [Unknown Package](03_Unknown_Package) (1)<br>
-4\. [Regex Crossword](04_Regex_Crossword) (1)<br>
+4\. Regex Crossword (1)<br>
 
 2. **Incidents**<br>
-5\. [Route Tracking](05_Route_Tracking) (2)<br>
-6\. [Van Keys](06_Van_keys) (2)<br>
-7\. [Messenger Portal](07_Messenger_Portal) (3)<br>
+5\. Route Tracking (2)<br>
+6\. Van Keys (2)<br>
+7\. Messenger Portal (3)<br>
 8\. [Fraudulent E-mail](08_Fraudulent_Email) (3)<br>
 
 3. **Miscellaneous**<br>
@@ -33,8 +33,8 @@ Soutěžící má za úkol najít pro každou úlohu v co nejkratší dobu speci
 13x\. [Streamlining Portal NG](13x_Streamlining_Portal_NG) (4)<br>
 14\. [XML Prettifier](14_XML_Prettifier) (4)<br>
 15\. [Blog Site](15_Blog_Site) (4)<br>
-16\. [Phonebook](16_Phonebook) (5)<br>
-17\. [Orderly IS](17_Orderly_IS) (5)<br>
+16\. Phonebook (5)<br>
+17\. Orderly IS (5)<br>
 
 Každá úloha je oceněna určitým počtem bodů v závislosti na její obtížnosti *(body jsou napsané v závorce u každé úlohy)*. Úspěšným řešitelem všech úkolů je člověk, který získá všech **48** bodů.
 
