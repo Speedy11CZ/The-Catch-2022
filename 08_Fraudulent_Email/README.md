@@ -22,7 +22,7 @@
 Ve staženém zipu se nachází 1 soubor:
 - `e-mail.eml`
 
-Jedná se o soubor obsahující podvodný email. V něm se nachází žádost o platbu a odkaz na stránku http://messenger-portal.mysterious-delivery.thecatch.cz. Jedná se o falešnou platební bránu, na které útočník vyžaduje zadání citlivých údajů od karty.
+Jedná se o soubor obsahující podvodný email. V něm se nachází žádost o platbu a odkaz na stránku http://really.sneaky.phishing.thecatch.cz/. Jedná se o falešnou platební bránu, na které útočník vyžaduje zadání citlivých údajů od karty.
 
 Do čísla karty je možné vložit pouze validní data, jelikož jsou před odesláním kontrolovány JavaScriptem. V prohlížeci jde vypnout na stránce JavaScript, poté lze do čísla karty vložit jakýkoliv text. Po bližší analýze se dá zjistit typ útoku, v tomto případě **XPath injection**. Po zadání znaku `*` se objeví hláška o rozbité platební kartě, obsahující číslo jedné z mnoha uložených platebních karet. Je ale potřeba najít i další čísla platebních karet.
 
