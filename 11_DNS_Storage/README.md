@@ -17,13 +17,13 @@
 
 ## Řešení
 
-V zadání úlohy jsme se dozvěděli, že v DNS záznamech `TXT` se nachází nějaké data. Bude se tedy s největší pravděpodobností jednat o flag nebo nějaké vodítko k němu.
+V zadání úlohy je uvedeno, že v DNS záznamech `TXT` se nachází nějaké data. Bude se tedy s největší pravděpodobností jednat o flag nebo nějaké vodítko k němu.
 
-Bohužel se tento záznam nenachází na hlavní doméně `mysterious-delivery.tcc`. Zároveň není možné pomocí `dig` commandu provést zone transfer. Hint napovídá, že doména používá technologii **DNSSEC**. To nám dovoluje použít alternativní možnost hledání subdomén, a to přesněji `Zone Walking`. Je totiž možné pomocí zastaralých `NSEC` záznamů provést enumeraci domény.
+Bohužel se tento záznam nenachází na hlavní doméně `mysterious-delivery.tcc`. Zároveň není možné pomocí `dig` commandu provést zone transfer. Hint napovídá, že doména používá technologii **DNSSEC**. To umožňuje využití alternativní možnosti hledání subdomén, přesněji `Zone Walking`. Je totiž možné pomocí zastaralých `NSEC` záznamů provést enumeraci domény.
 
-Na tento typ útoku existuje Linuxový nástroj `ldns-walk`. Při použití příkazu `ldns-walk @ns1.mysterious-delivery.thecatch.cz mysterious-delivery.tcc` dostaneme výpis mnoha DNS záznamů z celé domény. Tím nejzajímavějším je ale `TXT` záznam `depot-secret-upon-flag.mysterious-delivery.tcc`. Pomocí příkazu `dig @ns1.mysterious-delivery.thecatch.cz depot-secret-upon-flag.mysterious-delivery.tcc any` si můžeme vypsat přesný obsah tohoto záznamu.
+Na tento typ útoku existuje Linuxový nástroj `ldns-walk`. Po použití příkazu `ldns-walk @ns1.mysterious-delivery.thecatch.cz mysterious-delivery.tcc` dojde k výpisu mnoha DNS záznamů z celé domény. Tím nejzajímavějším je `TXT` záznam `depot-secret-upon-flag.mysterious-delivery.tcc`. Zadáním příkazu `dig @ns1.mysterious-delivery.thecatch.cz depot-secret-upon-flag.mysterious-delivery.tcc any` dojde k výpisu rozšířených informací o tomto záznamu.
 
-Obsahem `TXT` záznamu je text `secret code for steel safe is: RkxBR3tZcjMxLVhvWEUtNEZxOC02UElzfQ==`. Po dekódování **Base64** se dostaneme k hledanému flagu.
+Obsahem `TXT` záznamu je text `secret code for steel safe is: RkxBR3tZcjMxLVhvWEUtNEZxOC02UElzfQ==`. V dekódovaném **Base64** se nachází hledaný flag.
 
 ## Flag
 `FLAG{Yr31-XoXE-4Fq8-6PIs}`

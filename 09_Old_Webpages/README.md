@@ -17,9 +17,9 @@
 
 ## Řešení
 
-Ze zadání vyplývá, že při přesunu ze starého systému na nový došlo k chybě, při které se balíčky,které byly ve stavu **čeká se na vyzvednutí**, automaticky přesunuly do stavu **vyzvednuto**. Je tedy potřebné zjistit, co se nacházelo na stránce předtím. Bohužel na stránce http://tracking-2022-0845.mysterious-delivery.thecatch.cz narazíme na chybu `Already delivered`.
+Ze zadání vyplývá, že při přesunu ze starého systému na nový došlo k chybě, při které se balíčky,které byly ve stavu **čeká se na vyzvednutí** automaticky přesunuly do stavu **vyzvednuto**. Je tedy potřebné zjistit, co se nacházelo na stránce předtím. Bohužel na stránce http://tracking-2022-0845.mysterious-delivery.thecatch.cz se vyskytuje pouze chybová hláška `Already delivered`.
 
-Zde je ale velmi nápomocný hint, a to přesněji poslední slovo **archive**. Tento hint nepřímo odkazuje na stránku https://archive.org/web/, na které je možné procházet historii webové stránky. Po vložení odkazu na naší hledanou stránku se dopátráme až k datu `8. 8. 2022`. Po rozkliknutí tohoto datumu dojde k přesměrování na archivovanou kopii hledané stránky z tohoto dne, na které se nachází hledaný flag.
+V této úloze je velmi důležitý hint, to přesněji poslední slovo **archive**. Tento hint nepřímo odkazuje na stránku [archive.org](https://archive.org/web/), na které je možné procházet historii webové stránky. Po vložení odkazu na požadovanou stránku se lze dopátrat až k datu `8. 8. 2022`. Po rozkliknutí dojde k přesměrování na archivovanou kopii hledané stránky z téhož dne, na které se nachází hledaný flag.
 
 ## Flag
 `FLAG{pUVd-t1k9-DbkL-4r5X}`

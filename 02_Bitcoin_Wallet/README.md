@@ -17,11 +17,11 @@
 
 ## Řešení
 
-V zadání jsme dostali bitcoinovou adresu. Zákazníci, kteří provedli platbu na tuto adresu mohou zadat adresu své bitcoinové peněženký na stránku přiloženou v zadání, načež obdrží informace o balíčku.
+V zadání je uvedena bitcoinová adresa. Zákazníci, kteří provedli platbu na cílovou adresu mohou zadat adresu své bitcoinové peněženký na stránku přiloženou v zadání, načež obdrží informace o balíčku.
 
-Pro nás ale není nutné provádět žádnou bitcoinovou platbu. Bitcoin je totiž založený na **blockchainu**, tudíž veškeré proběhlé transakce na sebe navazují a není tedy těžké je dohledat. Na prohlížení transakcí existuje mnoho stránek, lze využít například stránku https://www.blockchain.com/explorer.
+Není ale nutné provádět bitcoinovou platbu. Bitcoin je totiž založený na **blockchainu**, tudíž veškeré proběhlé transakce na sebe navazují a je tedy možné je zpětně dohledat. Na prohlížení transakcí existuje mnoho webových stránek, lze využít například stránku [blockchain.com](https://www.blockchain.com/explorer).
 
-Po zadání cílové bitcoinové adresy můžeme nalézt několik provedených převodů na tuto adresu. Po otevření transakce se dopátráme k odesílateli s bitcoinovou adresou `bc1qrqqjjuefgc4akxl05cd4haxp5jznmmptjrllft`. Získanou adresu můžeme zadat na stránce http://pay-check.mysterious-delivery.thecatch.cz, načež se nám doopravdy zobrazí informace o balíčku. Na této stránce se nachází poznámka, kterou lze zobrazit kliknutím na tlačítko **show**. Zde se nachází náš hledaný flag.
+Po zadání cílové bitcoinové adresy dojde k zobrazení provedených převodů na tuto peněženku. Po otevření podrobností o provedené transakci se lze dopátrat k odesílateli s bitcoinovou adresou `bc1qrqqjjuefgc4akxl05cd4haxp5jznmmptjrllft`. Získaná bitcoinová adresa se následně zadá na stránku http://pay-check.mysterious-delivery.thecatch.cz, přičemž dojde k přesměrování na novou stránku . Na této stránce se nachází poznámka, která se dá zobrazit kliknutím na tlačítko **show**. V této poznámce se nachází hledaný flag.
 
 ## Flag
 `FLAG{PWei-v9hV-tekF-ptEl}`

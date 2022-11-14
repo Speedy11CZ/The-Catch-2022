@@ -21,11 +21,11 @@ Jedná se o téměř totožnou úlohu jako **Streamlining Portal**, doporučuji 
 
 Jako první je nutné pro vyřešení této úlohy se připojit na The Catch VPN. Bez připojení totiž není možné se připojit k webové stránce.
 
-Na této webové stránce narazíme na problém. Nově nemůžeme používat znak `/` v našem injectionu. To ale není vůbec žádný problém, jelikož stačí tyto znaky nahradit pomocí `os.sep`, který nám lomeno dosadí na straně serveru.
+Na této webové stránce se vyskytne problém. Nově není možné používat znak `/` v injectionu. To ale není vůbec žádný problém, jelikož stačí tyto znaky nahradit pomocí `os.sep`, který znak `/` dosadí na straně serveru.
 
 `"and exec('import os') or eval('open("FLAG"+os.sep+"flag.txt","r").read()') or"`
 
-Poté se nám opět vypíše flag.
+Poté dodjde k vypsání flagu.
 
 ## Flag
 `FLAG{hvIM-3aty-R39h-dOZ4}`

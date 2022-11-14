@@ -24,9 +24,9 @@ Ve staženém zipu se nachází 1 soubor:
 
 Jedná se o soubor obsahující podvodný email. V něm se nachází žádost o platbu a odkaz na stránku http://messenger-portal.mysterious-delivery.thecatch.cz. Jedná se o falešnou platební bránu, na které útočník vyžaduje zadání citlivých údajů od karty.
 
-Do čísla karty nelze vložit nevalidní data, jelikož jsou před odesláním kontrolovány JavaScriptem. Je ale možné na stránce JavaScript vypnout, poté lze do čísla karty vložit jakékoliv informace. Po bližší analýze lze zjistit typ útoku, v tomto případě **XPath injection**. Po zadání znaku * se vypíše hláška o rozbité platební kartě. Je ale potřeba najít i další čísla platebních karet.
+Do čísla karty je možné vložit pouze validní data, jelikož jsou před odesláním kontrolovány JavaScriptem. V prohlížeci jde vypnout na stránce JavaScript, poté lze do čísla karty vložit jakýkoliv text. Po bližší analýze se dá zjistit typ útoku, v tomto případě **XPath injection**. Po zadání znaku `*` se objeví hláška o rozbité platební kartě, obsahující číslo jedné z mnoha uložených platebních karet. Je ale potřeba najít i další čísla platebních karet.
 
-Pomocí injectionu je možné definovat pozici platební karty v seznamu. Do vstupu zadáme `*][1`. Číslo na konci můžeme libovolně měnit, na každém indexu se nachází jiná platební karta. Pro usnadnění hledání je možné si napsat program, zde v repozitáři je jako příklad přiložen soubor `solve.py` pro automatické nalezení flagu. Ten se zde nachází na pozici **128**, kdy místo platební karty je v chybové hlášce vypsán flag. 
+Skrze XPath injection je možné definovat pozici platební karty v seznamu. Místo čísla platební karty bude vstupem injection `*][i`, přičemž `i` je v tomto případě promměnou pro pozici karty v listu. Pro usnadnění hledání lze vytvořit script, zde v repozitáři je jako příklad přiložen soubor `solve.py`. Flag se nachází na pozici **128**, který je v chybové hlášce vypsán místo čísla platební karty. 
 
 ## Flag
 `FLAG{0BF0-RREd-vAK3-1Ayi}`

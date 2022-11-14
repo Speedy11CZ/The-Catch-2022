@@ -19,11 +19,11 @@
 
 Jako první je nutné pro vyřešení této úlohy se připojit na The Catch VPN. Bez připojení totiž není možné se připojit k webové stránce.
 
-V této úloze dostaneme přístup k webové stránce, která slouží k formátování `XML` souborů. Dále v navigaci nalezneme endpoint `/notes`, který je dostupný pouze z localhostu. Je tedy nutné provést request ze stejného serveru, kde běží webový server.
+V této úloze se nachází odkaz na stránku s funkcí formátování `XML` souborů. V navigaci této stránky se nachází endpoint `/notes`, který je dostupný pouze z localhostu. Je tedy nutné provést request ze stejného serveru, kde běží webový server.
 
-Zde můžeme využít injection útoku, přesněji `XXE Injection`. V XML je možné si totiž definovat novou entitu. Tato entita může být načtena klidně ze souboru či webové stránky. Bohužel výpis obsahu samotné stránky nám prettifier nedovolí, jelikož obsah stránky není ve formátu XML. Můžeme ale využít alternativní metodu.
+Na této stránce lze využít injection útoku, přesněji `XXE Injection`. V XML je možné si totiž definovat novou entitu. Tato entita může být načtena klidně ze souboru či webové stránky. Bohužel výpis obsahu samotné stránky prettifier nedovolí, jelikož obsah stránky není ve formátu XML. Existuje ale alternativní metoda.
 
-V prettifieru můžeme načíst externí soubor s entitami z našeho běžícího serveru. V tom si definujeme entitu, která se načítá ze stránky `/notes`. Dále provedeme request na neexistující webovou stránku, kde do `query` vložíme obsah stránky z předchozí entity. Nakonec entity postupně vykonáme. Výsledkem je chybová hláška o chybném requestu, kde dostaneme přesný obsah stránky `/notes` i s flagem.
+V prettifieru lze načíst externí soubor s entitami z jiného běžícího serveru. V tom bude nadefinovaná entita, která se načítá ze stránky `/notes`. Dále se provede request na neexistující webovou stránku, kde `query` bude obsah stránky z předchozí entity. Nakonec dojde k postupnému vykonání těchto entit. Výsledkem je chybová hláška o chybném requestu s přesným obsahem stránky `/notes` i s flagem.
 
 V této úloze je také možné využít přiložený script v Pythonu. Poté je cesta k souboru s entitami `http://[OpenVPN IP]:8000/`
 
@@ -44,7 +44,7 @@ V této úloze je také možné využít přiložený script v Pythonu. Poté je
 ## Flag
 `FLAG{GG53-5U3w-VT8F-qB31}`
 
-## Další užitečné odkazy
+## Užitečné odkazy
 
-- **XML Entity declaration** *(vysvětlení XML entit)* - https://xmlwriter.net/xml_guide/entity_declaration.shtml
-- **XXE Injection** *(podrobné vysvětlení zranitelnosti)* - https://portswigger.net/web-security/xxe
+- **[XML Entity declaration](https://xmlwriter.net/xml_guide/entity_declaration.shtml)** *(vysvětlení XML entit)*
+- **[XXE Injection](https://portswigger.net/web-security/xxe)** *(podrobné vysvětlení zranitelnosti)*

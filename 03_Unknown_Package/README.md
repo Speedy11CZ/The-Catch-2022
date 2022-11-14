@@ -29,7 +29,7 @@ V souboru `unknown_package_2261_1.JPG` se nachází balík, na kterém jsou lís
 - Krabice - Scientific Delivery
 - Tlapka - Wild Animal Inside
 
-V souboru `unknown_package_2261_2.JPG` se nachází ten samý balík, akorát místo lístečků s obrázky se zde nachází lístečky s QR a čárovými kódy. Po dekódování těchto kódů se dopátráme k několika textům, mezi kterými se nachází hledaný flag.
+V souboru `unknown_package_2261_2.JPG` se nachází ten samý balík, akorát místo lístečků s obrázky se zde nachází lístečky s QR a čárovými kódy. Po dekódování těchto kódů se lze dopátrat k několika textům, mezi kterými se nachází hledaný flag.
 
 ## Flag
 `FLAG{Oics-NF3B-vUOC-pUMt}`

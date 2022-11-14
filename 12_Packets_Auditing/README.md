@@ -19,12 +19,12 @@
 
 ## Řešení
 
-Ve staženém zipu se nachází mnoho souborů, pro nás aktuálně nejdůležitější:
+Ve staženém zipu se nachází vedle mnoha složek i soubor:
 - `description.png`
 
-V tomto souboru se nachází popis každého stavu balíčku a identifikace týmu. Ty jsou řešeny za pomocí barevných kombinací. Ve zbytku souborů se nachází velké množství obrázků, které obsahují identifikaci týmu a stav balíčku. Bylo by opravdu nelogické každý soubor zvlášť kontrolovat. Je tedy rozumnější použít nějaký script, což je i nepřímo zmiňováno v hintu.
+V tomto souboru se nachází popis každého stavu balíčku a identifikace týmu. Tyto informace jsou definovány za pomocí barev. Ve zbývajících složkách a podsložkách se nachází velké množství obrázků, které obsahují identifikaci týmu a stav balíčku. Bylo by nelogické každý soubor zvlášť kontrolovat. Je tedy rozumnější použít nějaký script, což je i nepřímo zmiňováno v hintu.
 
-Zde je použit přesněji pythonový script `solve.py`, který přesně podle barvy pixelu dokáže odhalit, zda splňuje kritéria, a to že musí být `ready for pickup` a zároveň musí patřit do týmu `Brenda's delivery`. Po chvíli náš script vypíše cestu k obrázku, na kterém se nachází speciální klíč, přesněji `629-367-219-835`.
+Zde je použit přesněji pythonový script `solve.py`, který přesně podle barvy pixelu dokáže odhalit, zda splňuje kritéria, a to že musí být `ready for pickup` a zároveň musí patřit do týmu `Brenda's delivery`. Po chvíli script vypíše cestu k obrázku, na kterém se nachází speciální klíč, přesněji `629-367-219-835`.
 
 Tento klíč je nutné vložit na stránku http://pickup.mysterious-delivery.thecatch.cz, kde dojde k přesměrování na stránku s flagem.
 
